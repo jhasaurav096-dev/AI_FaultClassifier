@@ -1,0 +1,153 @@
+{
+  "trained_at": "2026-11-03T07:57:49.997872Z",
+  "accuracy": 1.0,
+  "accuracy_percent": 100.0,
+  "distance_r2": 0.36115006305436104,
+  "distance_mae_km": 15.85,
+  "total_samples": 1320,
+  "feature_count": 98,
+  "classes_count": 11,
+  "top_features": [
+    {
+      "feature": "V_ca_rms",
+      "importance": 0.03758239446376635
+    },
+    {
+      "feature": "V_bc_rms",
+      "importance": 0.03713154031875205
+    },
+    {
+      "feature": "Vb_rms",
+      "importance": 0.03313489847938712
+    },
+    {
+      "feature": "Va_p2p",
+      "importance": 0.032437078232263265
+    },
+    {
+      "feature": "Vc_p2p",
+      "importance": 0.031364422557468075
+    },
+    {
+      "feature": "I_residual_rms",
+      "importance": 0.03114070182830826
+    },
+    {
+      "feature": "I_ab_rms",
+      "importance": 0.030607941952393407
+    },
+    {
+      "feature": "Vb_p2p",
+      "importance": 0.029652052399315676
+    },
+    {
+      "feature": "Vb_peak",
+      "importance": 0.02939799292462818
+    },
+    {
+      "feature": "Va_peak",
+      "importance": 0.028802441712272753
+    },
+    {
+      "feature": "Vc_peak",
+      "importance": 0.028305846261960362
+    },
+    {
+      "feature": "Va_rms",
+      "importance": 0.028168097953897
+    },
+    {
+      "feature": "I_ca_rms",
+      "importance": 0.0280091933610445
+    },
+    {
+      "feature": "V_ab_rms",
+      "importance": 0.02794187736110727
+    },
+    {
+      "feature": "I_residual_peak",
+      "importance": 0.027586083253987398
+    }
+  ],
+  "classification_report": {
+    "0: NORMAL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 24.0
+    },
+    "1: LG_AG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 24.0
+    },
+    "2: LG_BG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 24.0
+    },
+    "3: LG_CG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 24.0
+    },
+    "4: LL_AB": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 24.0
+    },
+    "5: LL_BC": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 24.0
+    },
+    "6: LL_CA": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 24.0
+    },
+    "7: LLG_ABG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 24.0
+    },
+    "8: LLG_BCG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 24.0
+    },
+    "9: LLG_CAG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 24.0
+    },
+    "10: LLL_ABC": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 24.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 264.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 264.0
+    }
+  }
+}
