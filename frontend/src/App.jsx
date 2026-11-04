@@ -7,8 +7,8 @@ import AnalyticsPage from './pages/AnalyticsPage';
 import ReportsPage from './pages/ReportsPage';
 
 const BACKEND_URL = 'https://ai-faultclassifier.onrender.com';
-const WS_URL = 'wss://ai-faultclassifier.onrender.com/ws/grid-stream';
-
+const WS_URL = 'wss://ai-faultclassifier.onrender.com/ws/waveform-stream';
+const ws = new WebSocket(WS_URL);
 export default function App() {
   return (
     <BrowserRouter>
