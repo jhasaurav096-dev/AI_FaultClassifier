@@ -17,7 +17,10 @@ from app.services.renewable import renewable_service
 from app.services.harmonics import harmonics_calculator
 from app.services.report_generator import report_generator
 
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI()  # Pehle yahan app define hona zaroori hai
 
 app.add_middleware(
     CORSMiddleware,
