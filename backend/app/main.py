@@ -17,6 +17,16 @@ from app.services.renewable import renewable_service
 from app.services.harmonics import harmonics_calculator
 from app.services.report_generator import report_generator
 
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("AI-FaultClassifier")
 
