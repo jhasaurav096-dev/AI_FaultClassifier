@@ -9,6 +9,7 @@ import ReportsPage from './pages/ReportsPage';
 const BACKEND_URL = 'https://ai-faultclassifier.onrender.com';
 const WS_URL = 'wss://ai-faultclassifier.onrender.com/ws/waveform-stream';
 const ws = new WebSocket(WS_URL);
+const API_BASE_URL = 'https://ai-faultclassifier.onrender.com/api';
 export default function App() {
   return (
     <BrowserRouter>
