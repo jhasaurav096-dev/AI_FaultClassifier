@@ -1,0 +1,5 @@
+{
+  "installCommand": "npm install --legacy-peer-deps",
+  "buildCommands": "npm run build",
+  "outputDirectory": "dist"
+}
