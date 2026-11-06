@@ -56,10 +56,15 @@ app = FastAPI(
 )
 
 # Enable CORS for frontend integration
+
+# Enable CORS for Vercel frontend integration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
+    allow_origins=[
+        "https://ai-fault-classifier-yw12.vercel.app",
+        "http://localhost:5173",
+    ],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )

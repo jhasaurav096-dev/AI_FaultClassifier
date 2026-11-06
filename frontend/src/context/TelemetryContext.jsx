@@ -2,18 +2,14 @@ import React, { createContext, useContext, useState, useEffect, useRef, useCallb
 
 const TelemetryContext = createContext(null);
 
-const WS_URL =
-  (window.location.protocol === 'https:' ? 'wss://' : 'ws://') +
-  (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-    ? `${window.location.hostname}:8000`
-    : window.location.host) +
-  '/ws/waveform-stream';
 
 const API_BASE =
-  (window.location.protocol === 'https:' ? 'https://' : 'http://') +
-  (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-    ? `${window.location.hostname}:8000`
-    : window.location.host);
+  import.meta.env.VITE_API_BASE_URL ||
+  'https://ai-faultclassifier.onrender.com';
+
+const WS_URL =
+  API_BASE.replace(/^https:/, 'wss:').replace(/^http:/, 'ws:') +
+  '/ws/waveform-stream';
 
 export function TelemetryProvider({ children }) {
   const [connected, setConnected] = useState(false);
